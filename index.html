@@ -64,10 +64,6 @@ h2.big{font-size:clamp(32px,5.5vw,50px);line-height:1;margin-bottom:8px;}
 h2.big em{font-style:normal;color:var(--dimmer);display:block;}
 .sub{color:var(--dim);max-width:66ch;font-size:18px;margin-bottom:34px;}
 
-/* video */
-video{width:100%;border-radius:14px;border:1px solid var(--line);display:block;background:#0e1216;}
-.vnote{font-size:14px;color:var(--dimmer);margin-top:12px;}
-
 /* evidence */
 .ev{border-top:1px solid var(--line);}
 .ev-row{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start;}
@@ -138,7 +134,6 @@ footer a:hover{color:var(--signal);border-color:var(--signal);}
   <div class="in">
     <div class="wm">TURNOVER<span>PROTOTYPE</span></div>
     <ul>
-      <li><a href="#demo">Demo</a></li>
       <li><a href="#problem">Problem</a></li>
       <li><a href="#try">Try it</a></li>
       <li><a href="#roles">Roles</a></li>
@@ -155,28 +150,14 @@ footer a:hover{color:var(--signal);border-color:var(--signal);}
     <p>A live, personalised call sheet for commercial film production. Every person on the sheet opens one link and sees only their own day. Production sees who has actually read it, and can move the schedule without sending another attachment.</p>
     <div class="btns">
       <a class="btn primary" href="#try">Try the prototype</a>
-      <a class="btn line" href="#demo">Watch the 75-second demo</a>
       <a class="btn line" href="assets/Turnover-Proposal.pdf">Read the proposal</a>
     </div>
   </div>
 </header>
 
-<section id="demo">
-  <div class="wrap">
-    <div class="eyebrow">01 · DEMO</div>
-    <h2 class="big">Seventy-five seconds<em>no narration needed</em></h2>
-    <p class="sub">Not an animation. A browser driving the real prototype — every state change on screen is the app responding to an actual click.</p>
-    <video controls preload="metadata" poster="assets/poster.jpg" playsinline>
-      <source src="assets/demo.mp4" type="video/mp4">
-      Your browser can't play this video. <a href="assets/demo.mp4">Download it instead.</a>
-    </video>
-    <p class="vnote">Captioned for silent playback. No audio track.</p>
-  </div>
-</section>
-
 <section id="problem">
   <div class="wrap">
-    <div class="eyebrow">02 · THE PROBLEM</div>
+    <div class="eyebrow">01 · THE PROBLEM</div>
     <h2 class="big">Three documents<em>that stopped agreeing</em></h2>
     <p class="sub">Not a hypothesis. What one ordinary shoot day looked like — a well-run job, an experienced team, and paperwork doing what paperwork does.</p>
     <div class="ev">
@@ -202,7 +183,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal);}
 
 <section id="try">
   <div class="wrap">
-    <div class="eyebrow">03 · TRY IT</div>
+    <div class="eyebrow">02 · TRY IT</div>
     <h2 class="big">The live prototype<em>switch roles, move the day</em></h2>
     <p class="sub">Sign in as the 1st AD, open SHOTS, add fifteen minutes to the patio setup, then publish. Switch to Edmond and his wrap time has already moved. Switch to the agency guest and the crew tab is gone entirely.</p>
     <div class="frame">
@@ -217,7 +198,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal);}
 
 <section id="roles">
   <div class="wrap">
-    <div class="eyebrow">04 · PERMISSIONS</div>
+    <div class="eyebrow">03 · PERMISSIONS</div>
     <h2 class="big">One app.<em>The role decides what's in it.</em></h2>
     <p class="sub">Not four products. One build, where the tabs, the editable rows and the visible data all change according to who production invited and as what.</p>
     <div class="cards">
@@ -232,7 +213,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal);}
 
 <section id="proposal">
   <div class="wrap">
-    <div class="eyebrow">05 · THE ASK</div>
+    <div class="eyebrow">04 · THE ASK</div>
     <h2 class="big">Three shoot days<em>and nothing changes for you</em></h2>
     <p class="sub">Send the call sheet the way you always do. I'll turn it into links by hand, at no cost, running alongside your existing process — the paper sheet stays as the fallback, so there is no operational risk in finding out whether this works.</p>
     <div class="dl">
@@ -247,7 +228,7 @@ footer a:hover{color:var(--signal);border-color:var(--signal);}
 
 <section>
   <div class="wrap">
-    <div class="eyebrow">06 · HOW IT GETS BUILT</div>
+    <div class="eyebrow">05 · HOW IT GETS BUILT</div>
     <h2 class="big">Ship narrow,<em>then widen</em></h2>
     <p class="sub">Each phase starts only once the previous one has run on a real shoot.</p>
     <div class="stack">
