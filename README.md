@@ -6,7 +6,7 @@ A live, personalised call sheet for commercial film production. Every person on 
 opens one link and sees only their own day. Production sees who has actually read it, and
 can move the schedule without sending another attachment.
 
-**Live site:** https://rudyshange.github.io/FAM-FILM/
+**Live site:** https://rudyshange.github.io/FAM-FILM/app.html
 
 ---
 
@@ -14,10 +14,7 @@ can move the schedule without sending another attachment.
 
 | File | What it is |
 |---|---|
-| `index.html` | Landing page — problem, live prototype, proposal |
 | `app.html` | The full interactive prototype. Four roles, five tabs, staged publishing |
-| `roles.html` | Permission model — the same shoot day rendered under four roles |
-| `concept.html` | Original concept sketch: crew phone beside a production console |
 | `assets/Turnover-Proposal.pdf` | Nine-page pilot proposal |
 
 No build step, no dependencies, no framework. Plain HTML, CSS and JavaScript.
@@ -25,7 +22,7 @@ Everything runs in the browser and no data leaves the page.
 
 ## Run it locally
 
-Open `index.html` in a browser, or serve the folder:
+Open `app.html` in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8000
