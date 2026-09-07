@@ -157,7 +157,7 @@ button:focus-visible{outline:2px solid var(--signal);outline-offset:2px;}
 
   <div class="board">
     <div class="bhead">
-      <div><h3 id="bTitle">Shoot day 1 · Greenside</h3><div class="who" id="bWho">Barry v. N. · 1st AD</div></div>
+      <div><h3 id="bTitle">Shoot day 1 · Greenside</h3><div class="who" id="bWho">Barry Mercer · 1st AD</div></div>
       <span class="scope" id="bScope">write · schedule</span>
     </div>
 
@@ -218,11 +218,11 @@ button:focus-visible{outline:2px solid var(--signal);outline-offset:2px;}
 var ROLES = {
   owner:  {name:"Amanda D. · Producer",        scope:"write · everything", cls:"w",
            foot:"Can override the AD and publish without a draft. Sees rates and the full crew directory."},
-  ad:     {name:"Barry v. N. · 1st AD",        scope:"write · schedule",   cls:"w",
+  ad:     {name:"Barry Mercer · 1st AD",        scope:"write · schedule",   cls:"w",
            foot:"The only role that moves times and wraps shots on the day. Cannot see rates or invite people."},
-  crew:   {name:"Edmond S. · AD Trainee",      scope:"read · plus confirm",cls:"r",
+  crew:   {name:"Edmond Vale · AD Trainee",      scope:"read · plus confirm",cls:"r",
            foot:"Reads the published version only. Can confirm, sign out, and flag a problem — nothing else."},
-  client: {name:"Kagiso A. · Agency Producer", scope:"guest · progress",   cls:"r",
+  client: {name:"Kagiso Cole · Agency Producer", scope:"guest · progress",   cls:"r",
            foot:"Sees how the day is tracking. No contact details, no cast personal data, no other projects."}
 };
 
@@ -309,7 +309,7 @@ shotsEl.addEventListener("click", function(e){
   var a = b.dataset.a, i = parseInt(b.dataset.i,10);
   if(a==="wrap"){ shots[i].st="wrapped"; if(shots[i+1]) shots[i+1].st="rolling"; drafts++; }
   if(a==="push"){ for(var j=i;j<shots.length;j++){ shots[j].t+=15; shots[j].moved=true; } drafts++; }
-  if(a==="confirm"){ confirmed=!confirmed; if(confirmed) log("Edmond S. signed out at wrap."); }
+  if(a==="confirm"){ confirmed=!confirmed; if(confirmed) log("Edmond Vale signed out at wrap."); }
   render();
 });
 

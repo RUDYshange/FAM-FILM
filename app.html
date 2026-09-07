@@ -200,7 +200,7 @@ button:focus-visible{outline:2px solid var(--signal);outline-offset:2px;}
       <div class="phead">
         <div>
           <div class="prod">SUNVAL "Home" · SD1 of 1 · Greenside</div>
-          <div class="who" id="pWho">Barry van Niekerk</div>
+          <div class="who" id="pWho">Barry Mercer</div>
           <div class="role" id="pRole">1st AD</div>
         </div>
         <span class="scope" id="pScope">write</span>
@@ -219,13 +219,13 @@ button:focus-visible{outline:2px solid var(--signal);outline-offset:2px;}
 
 /* ---------------- state ---------------- */
 var ROLES = {
-  coord:  {who:"Sukhleen Kaur", role:"Production Coordinator", scope:"write · publish", w:true, control:true,
+  coord:  {who:"Sukhleen Bell", role:"Production Coordinator", scope:"write · publish", w:true, control:true,
            tabs:["day","shots","crew","changes","control"], call:450, dept:"Production"},
-  ad:     {who:"Barry van Niekerk", role:"1st AD", scope:"write · schedule", w:true, control:false,
+  ad:     {who:"Barry Mercer", role:"1st AD", scope:"write · schedule", w:true, control:false,
            tabs:["day","shots","crew","changes"], call:510, dept:"Direction"},
-  crew:   {who:"Edmond Shange", role:"AD Trainee · Direction", scope:"read", w:false, control:false,
+  crew:   {who:"Edmond Vale", role:"AD Trainee · Direction", scope:"read", w:false, control:false,
            tabs:["day","shots","crew","changes"], call:450, dept:"Direction"},
-  client: {who:"Kagiso Africa", role:"Agency Producer · guest", scope:"guest", w:false, control:false,
+  client: {who:"Kagiso Cole", role:"Agency Producer · guest", scope:"guest", w:false, control:false,
            tabs:["day","shots","changes"], call:540, dept:null}
 };
 var TABNAME = {day:"DAY", shots:"SHOTS", crew:"CREW", changes:"CHANGES", control:"CONTROL"};
@@ -245,17 +245,17 @@ var shots = [
 var meals = [{n:"Breakfast · basecamp",t:510},{n:"Lunch · basecamp",t:900},{n:"Wrap snack",t:1200}];
 
 var people = [
-  {n:"Barry van Niekerk", r:"1st AD", d:"Direction", hod:true,  conf:"yes"},
-  {n:"Sukhleen Kaur",     r:"Coordinator", d:"Production", hod:true, conf:"yes"},
-  {n:"Amanda Dlamini",    r:"Producer", d:"Production", hod:true, conf:"yes"},
-  {n:"Mandla Madi",       r:"Unit Manager", d:"Unit", hod:true,  conf:"yes"},
-  {n:"Dennis Memo",       r:"Medic", d:"Unit", hod:true,         conf:"yes"},
-  {n:"Ebrahim Hajee",     r:"DoP", d:"Camera", hod:true,         conf:"yes"},
-  {n:"Dallas Ncala",      r:"Gaffer", d:"Lighting", hod:true,    conf:"open"},
-  {n:"Edmond Shange",     r:"AD Trainee", d:"Direction", hod:false, conf:"yes"},
-  {n:"Monray Louw",       r:"HMU Assistant", d:"HMU", hod:false, conf:"open"},
-  {n:"Thando Kheswa",     r:"Craft Team Leader", d:"Craft", hod:false, conf:"none"},
-  {n:"Papiki Kodisang",   r:"Driver's Assistant", d:"Art", hod:false, conf:"none"}
+  {n:"Barry Mercer",  r:"1st AD", d:"Direction", hod:true,  conf:"yes"},
+  {n:"Sukhleen Bell", r:"Coordinator", d:"Production", hod:true, conf:"yes"},
+  {n:"Amanda Hart",   r:"Producer", d:"Production", hod:true, conf:"yes"},
+  {n:"Mandla Rowan",  r:"Unit Manager", d:"Unit", hod:true,  conf:"yes"},
+  {n:"Dennis Vale",   r:"Medic", d:"Unit", hod:true,         conf:"yes"},
+  {n:"Ebrahim North", r:"DoP", d:"Camera", hod:true,         conf:"yes"},
+  {n:"Dallas Pike",   r:"Gaffer", d:"Lighting", hod:true,    conf:"open"},
+  {n:"Edmond Vale",   r:"AD Trainee", d:"Direction", hod:false, conf:"yes"},
+  {n:"Monray Finch",  r:"HMU Assistant", d:"HMU", hod:false, conf:"open"},
+  {n:"Thando Reed",   r:"Craft Team Leader", d:"Craft", hod:false, conf:"none"},
+  {n:"Papiki Moss",   r:"Driver's Assistant", d:"Art", hod:false, conf:"none"}
 ];
 
 var alerts = [
